@@ -68,8 +68,11 @@ services:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
+    ports:
+      - "5432:5432"
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
+      -../data/20181101_d10_1000_1030.csv:/var/lib/postgresql/data/20181101_d10_1000_1030.csv 
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "airflow"]
       interval: 5s

@@ -1,0 +1,11 @@
+matplotlib
+pandas
+seaborn
+plotly
+jupyter
+dvc
+mlflow
+dbt
+dbt-core
+dbt-postgres 
+apache-airflow
