@@ -10,6 +10,8 @@ from airflow.utils.dates import timedelta
 default_args = {
     "owner": "User",
     "retries": 1,
+    "email": ["gedionandme@gmail.com"],
+    "email_on_failaure": True,
     "retry_delay": timedelta(minutes=10),
 }
 
