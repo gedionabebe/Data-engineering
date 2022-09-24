@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: traffic_data
+  - name: test2
     description: "traffic data"
-    database: traffic_data
+    database: test2
     schema: public
     tables:
       - name: traffic

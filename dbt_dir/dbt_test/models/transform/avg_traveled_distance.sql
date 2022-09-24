@@ -1,12 +1,12 @@
 with database_data as (
     select *
-    from {{ source('traffic_data', 'traffic') }}
+    from {{ source('test2', 'traffic') }}
 ),
 
 t_data as (
     select
         v_type,
-        AVG(traveled_d)
+        AVG(speed)
     from database_data
     group by v_type
 )
