@@ -1,0 +1,149 @@
+[2022-09-24T20:03:49.801+0300] {processor.py:156} INFO - Started process (PID=3565) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:03:49.802+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T20:03:49.803+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:03:49.803+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:03:51.205+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:03:50.900+0300] {dagbag.py:330} ERROR - Failed to import: /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+Traceback (most recent call last):
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py", line 38, in <module>
+    dbt_serve_docs = BashOperator(
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 773, in __init__
+    task_group.add(self)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 213, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'dbt_gernerate_docs' has already been added to the DAG
+[2022-09-24T20:03:51.225+0300] {processor.py:770} WARNING - No viable dags retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:03:52.235+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 2.438 seconds
+[2022-09-24T20:04:59.942+0300] {processor.py:156} INFO - Started process (PID=3624) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:04:59.944+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T20:04:59.949+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:59.946+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:05:00.314+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:00.306+0300] {dagbag.py:330} ERROR - Failed to import: /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+Traceback (most recent call last):
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py", line 38, in <module>
+    dbt_serve_docs = BashOperator(
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 773, in __init__
+    task_group.add(self)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 213, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'dbt_gernerate_docs' has already been added to the DAG
+[2022-09-24T20:05:00.315+0300] {processor.py:770} WARNING - No viable dags retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:05:00.461+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 0.525 seconds
+[2022-09-24T20:05:29.275+0300] {processor.py:156} INFO - Started process (PID=3645) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:05:29.277+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T20:05:29.279+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:29.278+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:05:29.821+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:29.816+0300] {dagbag.py:330} ERROR - Failed to import: /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+Traceback (most recent call last):
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py", line 38, in <module>
+    dbt_serve_docs = BashOperator(
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 773, in __init__
+    task_group.add(self)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 213, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'dbt_gernerate_docs' has already been added to the DAG
+[2022-09-24T20:05:29.822+0300] {processor.py:770} WARNING - No viable dags retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:05:29.958+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 0.688 seconds
+[2022-09-24T20:06:10.799+0300] {processor.py:156} INFO - Started process (PID=3693) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:06:10.863+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T20:06:10.867+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:06:10.864+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:06:12.786+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:06:12.781+0300] {dagbag.py:330} ERROR - Failed to import: /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+Traceback (most recent call last):
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py", line 38, in <module>
+    dbt_serve_docs = BashOperator(
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 147, in __init__
+    super().__init__(**kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 408, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 773, in __init__
+    task_group.add(self)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/task_group.py", line 213, in add
+    raise DuplicateTaskIdFound(f"{node_type} id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'dbt_gernerate_docs' has already been added to the DAG
+[2022-09-24T20:06:12.787+0300] {processor.py:770} WARNING - No viable dags retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T20:06:13.650+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 2.856 seconds
+[2022-09-24T21:03:04.015+0300] {processor.py:156} INFO - Started process (PID=4075) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:03:04.032+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T21:03:04.033+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:04.033+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:03:09.683+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:03:09.833+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:09.833+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:03:09.872+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:09.872+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:03:10.649+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 6.667 seconds
+[2022-09-24T21:04:26.344+0300] {processor.py:156} INFO - Started process (PID=4142) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:04:26.367+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T21:04:26.368+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:04:26.368+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:04:27.354+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:04:27.405+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:04:27.405+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:04:27.457+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:04:27.457+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:04:27.721+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 1.393 seconds
+[2022-09-24T21:05:33.045+0300] {processor.py:156} INFO - Started process (PID=4188) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:05:33.067+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T21:05:33.069+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:33.068+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:05:33.543+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:05:33.665+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:33.665+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:05:33.701+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:33.701+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:05:33.939+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 0.897 seconds
+[2022-09-24T21:06:13.979+0300] {processor.py:156} INFO - Started process (PID=4215) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:06:13.980+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T21:06:13.982+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:13.981+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:06:14.590+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:06:14.654+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:14.654+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:06:14.689+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:14.689+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:06:14.885+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 0.911 seconds
+[2022-09-24T21:06:51.971+0300] {processor.py:156} INFO - Started process (PID=4240) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:06:51.972+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T21:06:51.974+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:51.973+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:06:52.799+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:06:52.931+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:52.931+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:06:52.975+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:52.975+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:06:53.283+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 1.319 seconds
+[2022-09-24T21:25:37.949+0300] {processor.py:156} INFO - Started process (PID=4390) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:25:38.125+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T21:25:38.128+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:38.128+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:25:40.284+0300] {processor.py:768} INFO - DAG(s) dict_keys(['DBT_actions']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:25:41.096+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:41.096+0300] {manager.py:508} INFO - Created Permission View: can edit on DAG:DBT_actions
+[2022-09-24T21:25:41.454+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:41.454+0300] {manager.py:508} INFO - Created Permission View: can read on DAG:DBT_actions
+[2022-09-24T21:25:41.748+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:41.748+0300] {manager.py:508} INFO - Created Permission View: can delete on DAG:DBT_actions
+[2022-09-24T21:25:41.750+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:41.750+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:25:41.785+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:41.785+0300] {dag.py:2594} INFO - Creating ORM DAG for DBT_actions
+[2022-09-24T21:25:41.803+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:41.802+0300] {dag.py:3324} INFO - Setting next_dagrun for DBT_actions to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:25:42.020+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 4.208 seconds
+[2022-09-24T21:29:44.088+0300] {processor.py:156} INFO - Started process (PID=4491) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:29:44.096+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py for tasks to queue
+[2022-09-24T21:29:44.099+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:29:44.098+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:29:44.726+0300] {processor.py:768} INFO - DAG(s) dict_keys(['DBT_actions']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py
+[2022-09-24T21:29:44.775+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:29:44.774+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:29:44.862+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:29:44.862+0300] {dag.py:3324} INFO - Setting next_dagrun for DBT_actions to 2022-09-24T00:00:00+00:00, run_after=2022-09-25T00:00:00+00:00
+[2022-09-24T21:29:45.086+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/dbt_dags.py took 1.003 seconds

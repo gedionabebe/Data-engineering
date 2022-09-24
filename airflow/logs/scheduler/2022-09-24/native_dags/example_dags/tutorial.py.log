@@ -1,0 +1,118 @@
+[2022-09-24T20:04:19.978+0300] {processor.py:156} INFO - Started process (PID=3581) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:04:19.979+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2022-09-24T20:04:19.981+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:19.980+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:04:19.998+0300] {processor.py:768} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:04:20.052+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:20.052+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:04:20.087+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:20.087+0300] {dag.py:3324} INFO - Setting next_dagrun for tutorial to 2022-09-23T17:04:20.086839+00:00, run_after=2022-09-24T17:04:20.086839+00:00
+[2022-09-24T20:04:20.459+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.485 seconds
+[2022-09-24T20:05:20.960+0300] {processor.py:156} INFO - Started process (PID=3639) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:05:20.962+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2022-09-24T20:05:20.963+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:20.962+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:05:20.978+0300] {processor.py:768} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:05:21.025+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:21.025+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:05:21.056+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:21.056+0300] {dag.py:3324} INFO - Setting next_dagrun for tutorial to 2022-09-23T17:05:21.056075+00:00, run_after=2022-09-24T17:05:21.056075+00:00
+[2022-09-24T20:05:21.278+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.322 seconds
+[2022-09-24T20:07:06.176+0300] {processor.py:156} INFO - Started process (PID=3710) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:07:06.215+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2022-09-24T20:07:06.217+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:07:06.216+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:07:06.235+0300] {processor.py:768} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T20:07:07.837+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:07:07.837+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:07:08.001+0300] {processor.py:181} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 719, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 177, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 158, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 75, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 783, in process_file
+    dagbag.sync_to_db(processor_subdir=self._dag_directory, session=session)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 632, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/home/rex/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/rex/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 360, in iter
+    raise retry_exc.reraise()
+  File "/home/rex/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 193, in reraise
+    raise self.last_attempt.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 646, in sync_to_db
+    DAG.bulk_write_to_db(
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 2616, in bulk_write_to_db
+    num_active_runs = DagRun.active_runs_of_dags(dag_ids=existing_dags, session=session)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 72, in wrapper
+    return func(*args, **kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/models/dagrun.py", line 275, in active_runs_of_dags
+    return {dag_id: count for dag_id, count in query.all()}
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2759, in all
+    return self._iter().all()
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2894, in _iter
+    result = self.session.execute(
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1614, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1481, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2026, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 719, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+[SQL: SELECT dag_run.dag_id AS dag_run_dag_id, count(?) AS count_1 
+FROM dag_run 
+WHERE dag_run.dag_id IN (?) AND dag_run.state IN (?, ?) GROUP BY dag_run.dag_id]
+[parameters: ('*', 'tutorial', <TaskInstanceState.RUNNING: 'running'>, <TaskInstanceState.QUEUED: 'queued'>)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2022-09-24T21:03:38.745+0300] {processor.py:156} INFO - Started process (PID=4092) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:03:38.747+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2022-09-24T21:03:38.748+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:38.748+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:03:38.775+0300] {processor.py:768} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:03:38.857+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:38.856+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:03:38.911+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:38.911+0300] {dag.py:3324} INFO - Setting next_dagrun for tutorial to 2022-09-23T18:03:38.910737+00:00, run_after=2022-09-24T18:03:38.910737+00:00
+[2022-09-24T21:03:39.099+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.359 seconds
+[2022-09-24T21:05:16.286+0300] {processor.py:156} INFO - Started process (PID=4176) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:05:16.330+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2022-09-24T21:05:16.331+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:16.331+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:05:16.348+0300] {processor.py:768} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:05:16.415+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:16.414+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:05:16.452+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:16.452+0300] {dag.py:3324} INFO - Setting next_dagrun for tutorial to 2022-09-23T18:05:16.451563+00:00, run_after=2022-09-24T18:05:16.451563+00:00
+[2022-09-24T21:05:16.782+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.500 seconds
+[2022-09-24T21:06:33.456+0300] {processor.py:156} INFO - Started process (PID=4229) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:06:33.457+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2022-09-24T21:06:33.459+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:33.459+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:06:33.496+0300] {processor.py:768} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:06:33.557+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:33.557+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:06:33.594+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:33.593+0300] {dag.py:3324} INFO - Setting next_dagrun for tutorial to 2022-09-23T18:06:33.593320+00:00, run_after=2022-09-24T18:06:33.593320+00:00
+[2022-09-24T21:06:33.831+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.383 seconds
+[2022-09-24T21:26:56.399+0300] {processor.py:156} INFO - Started process (PID=4436) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:26:56.421+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2022-09-24T21:26:56.422+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:26:56.422+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:26:56.438+0300] {processor.py:768} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py
+[2022-09-24T21:26:56.486+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:26:56.485+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:26:56.523+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:26:56.523+0300] {dag.py:3324} INFO - Setting next_dagrun for tutorial to 2022-09-23T18:26:56.522877+00:00, run_after=2022-09-24T18:26:56.522877+00:00
+[2022-09-24T21:26:56.717+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/tutorial.py took 0.323 seconds

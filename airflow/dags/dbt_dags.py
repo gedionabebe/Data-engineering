@@ -16,7 +16,7 @@ default_args = {
 }
 
 dag = DAG(
-    dag_id="create_table_and_fill_table",
+    dag_id="DBT_actions",
     default_args=default_args,
     schedule_interval="@daily",
     start_date=days_ago(1),
@@ -36,7 +36,7 @@ dbt_gernerate_docs = BashOperator(
     dag=dag)
 
 dbt_serve_docs = BashOperator(
-    task_id="dbt_gernerate_docs", 
+    task_id="dbt_serve_docs", 
     bash_command="dbt docs serve", 
     dag=dag)
 

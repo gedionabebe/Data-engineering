@@ -1,0 +1,86 @@
+[2022-09-24T20:03:41.647+0300] {processor.py:156} INFO - Started process (PID=3563) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:03:41.649+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T20:03:41.652+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:03:41.651+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:03:45.920+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:03:46.383+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:03:46.383+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:03:46.421+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:03:46.421+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T20:03:48.494+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 6.851 seconds
+[2022-09-24T20:04:57.985+0300] {processor.py:156} INFO - Started process (PID=3623) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:04:57.986+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T20:04:57.987+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:57.987+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:04:58.424+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:04:58.468+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:58.467+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:04:58.496+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:58.496+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T20:04:58.683+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 0.702 seconds
+[2022-09-24T20:05:28.040+0300] {processor.py:156} INFO - Started process (PID=3644) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:05:28.042+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T20:05:28.043+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:28.043+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:05:28.559+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:05:28.599+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:28.598+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:05:28.632+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:28.631+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T20:05:28.839+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 0.803 seconds
+[2022-09-24T20:05:59.645+0300] {processor.py:156} INFO - Started process (PID=3691) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:05:59.647+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T20:05:59.648+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:59.648+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:06:01.569+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T20:06:01.778+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:06:01.777+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:06:02.137+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:06:02.137+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T20:06:05.939+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 6.318 seconds
+[2022-09-24T21:03:12.303+0300] {processor.py:156} INFO - Started process (PID=4077) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:03:12.335+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T21:03:12.337+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:12.336+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:03:12.834+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:03:12.865+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:12.865+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:03:12.901+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:12.901+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:03:13.470+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 1.170 seconds
+[2022-09-24T21:04:34.334+0300] {processor.py:156} INFO - Started process (PID=4160) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:04:34.371+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T21:04:34.373+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:04:34.373+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:04:36.023+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:04:36.341+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:04:36.341+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:04:36.434+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:04:36.433+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:04:36.768+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 2.461 seconds
+[2022-09-24T21:05:35.199+0300] {processor.py:156} INFO - Started process (PID=4189) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:05:35.200+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T21:05:35.202+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:35.202+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:05:35.714+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:05:35.748+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:35.748+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:05:35.784+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:35.784+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:05:36.039+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 0.844 seconds
+[2022-09-24T21:06:15.283+0300] {processor.py:156} INFO - Started process (PID=4216) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:06:15.284+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T21:06:15.286+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:15.286+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:06:16.157+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:06:16.294+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:16.293+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:06:16.329+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:16.328+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:06:16.629+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 1.354 seconds
+[2022-09-24T21:06:54.520+0300] {processor.py:156} INFO - Started process (PID=4241) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:06:54.522+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T21:06:54.523+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:54.523+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:06:55.154+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:06:55.180+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:55.180+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:06:55.228+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:55.228+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-23T00:00:00+00:00, run_after=2022-09-24T00:00:00+00:00
+[2022-09-24T21:06:55.590+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 1.075 seconds
+[2022-09-24T21:25:57.800+0300] {processor.py:156} INFO - Started process (PID=4405) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:25:57.953+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T21:25:57.955+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:57.955+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:25:58.785+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:25:58.881+0300] {processor.py:727} INFO - Executed failure callback for <TaskInstance: create_table_and_fill_table.dbt_run_transfromations manual__2022-09-24T18:12:01.316895+00:00 [up_for_retry]> in state up_for_retry
+[2022-09-24T21:25:59.374+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:59.374+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:25:59.439+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:59.438+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-24T00:00:00+00:00, run_after=2022-09-25T00:00:00+00:00
+[2022-09-24T21:25:59.661+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 1.864 seconds
+[2022-09-24T21:25:59.763+0300] {processor.py:156} INFO - Started process (PID=4406) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:25:59.765+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T21:25:59.768+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:25:59.768+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:26:02.036+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:26:02.638+0300] {processor.py:727} INFO - Executed failure callback for <TaskInstance: create_table_and_fill_table.dbt_run_transfromations scheduled__2022-09-23T00:00:00+00:00 [failed]> in state failed
+[2022-09-24T21:26:03.167+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:26:03.167+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:26:03.247+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:26:03.247+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-24T00:00:00+00:00, run_after=2022-09-25T00:00:00+00:00
+[2022-09-24T21:26:04.474+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 4.719 seconds
+[2022-09-24T21:29:46.807+0300] {processor.py:156} INFO - Started process (PID=4493) to work on /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:29:46.809+0300] {processor.py:758} INFO - Processing file /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py for tasks to queue
+[2022-09-24T21:29:46.811+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:29:46.810+0300] {dagbag.py:525} INFO - Filling up the DagBag from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:29:47.471+0300] {processor.py:768} INFO - DAG(s) dict_keys(['create_table_and_fill_table']) retrieved from /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py
+[2022-09-24T21:29:47.518+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:29:47.517+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:29:47.552+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:29:47.552+0300] {dag.py:3324} INFO - Setting next_dagrun for create_table_and_fill_table to 2022-09-24T00:00:00+00:00, run_after=2022-09-25T00:00:00+00:00
+[2022-09-24T21:29:47.765+0300] {processor.py:178} INFO - Processing /mnt/c/Users/User/Desktop/Data-engineering/airflow/dags/database.py took 0.961 seconds

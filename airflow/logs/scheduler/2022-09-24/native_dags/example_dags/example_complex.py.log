@@ -1,0 +1,89 @@
+[2022-09-24T20:04:16.163+0300] {processor.py:156} INFO - Started process (PID=3578) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:04:16.165+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-09-24T20:04:16.166+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:16.166+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:04:16.193+0300] {processor.py:768} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:04:16.410+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:16.409+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:04:16.450+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:04:16.450+0300] {dag.py:3324} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2022-09-24T20:04:16.832+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.673 seconds
+[2022-09-24T20:05:18.616+0300] {processor.py:156} INFO - Started process (PID=3637) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:05:18.619+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-09-24T20:05:18.621+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:18.620+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:05:18.647+0300] {processor.py:768} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:05:18.702+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:18.702+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:05:18.736+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:05:18.736+0300] {dag.py:3324} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2022-09-24T20:05:18.898+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.286 seconds
+[2022-09-24T20:06:59.434+0300] {processor.py:156} INFO - Started process (PID=3708) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:06:59.480+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-09-24T20:06:59.482+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:06:59.481+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:06:59.512+0300] {processor.py:768} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T20:07:00.073+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:07:00.073+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T20:07:00.138+0300] {logging_mixin.py:117} INFO - [2022-09-24T20:07:00.138+0300] {dag.py:3324} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2022-09-24T20:07:01.240+0300] {processor.py:181} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 998, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 672, in do_commit
+    dbapi_connection.commit()
+sqlite3.OperationalError: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 177, in _run_file_processor
+    _handle_dag_file_processing()
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 158, in _handle_dag_file_processing
+    result: tuple[int, int] = dag_file_processor.process_file(
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 75, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/rex/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 784, in process_file
+    session.commit()
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1428, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 836, in commit
+    trans.commit()
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2361, in commit
+    self._do_commit()
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2544, in _do_commit
+    self._connection_commit_impl()
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2515, in _connection_commit_impl
+    self.connection._commit_impl()
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1000, in _commit_impl
+    self._handle_dbapi_exception(e, None, None, None, None)
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2026, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 998, in _commit_impl
+    self.engine.dialect.do_commit(self.connection)
+  File "/home/rex/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 672, in do_commit
+    dbapi_connection.commit()
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) disk I/O error
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2022-09-24T21:03:35.466+0300] {processor.py:156} INFO - Started process (PID=4090) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:03:35.481+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-09-24T21:03:35.482+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:35.482+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:03:35.529+0300] {processor.py:768} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:03:35.662+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:35.662+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:03:35.715+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:03:35.714+0300] {dag.py:3324} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2022-09-24T21:03:35.997+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.536 seconds
+[2022-09-24T21:05:11.178+0300] {processor.py:156} INFO - Started process (PID=4174) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:05:11.340+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-09-24T21:05:11.341+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:11.341+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:05:11.424+0300] {processor.py:768} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:05:11.904+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:11.904+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:05:11.947+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:05:11.947+0300] {dag.py:3324} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2022-09-24T21:05:12.508+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 1.336 seconds
+[2022-09-24T21:06:30.658+0300] {processor.py:156} INFO - Started process (PID=4226) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:06:30.660+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-09-24T21:06:30.662+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:30.661+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:06:30.686+0300] {processor.py:768} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:06:30.760+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:30.760+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:06:30.801+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:06:30.800+0300] {dag.py:3324} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2022-09-24T21:06:31.013+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.360 seconds
+[2022-09-24T21:26:50.783+0300] {processor.py:156} INFO - Started process (PID=4433) to work on /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:26:50.802+0300] {processor.py:758} INFO - Processing file /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2022-09-24T21:26:50.803+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:26:50.803+0300] {dagbag.py:525} INFO - Filling up the DagBag from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:26:50.872+0300] {processor.py:768} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2022-09-24T21:26:50.974+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:26:50.974+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-09-24T21:26:51.009+0300] {logging_mixin.py:117} INFO - [2022-09-24T21:26:51.009+0300] {dag.py:3324} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2022-09-24T21:26:51.247+0300] {processor.py:178} INFO - Processing /home/rex/.local/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.471 seconds
